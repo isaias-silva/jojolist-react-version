@@ -1,0 +1,483 @@
+/*definições básicas*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul {
+    list-style: none;
+}
+
+#todo {
+    margin: 0%;
+}
+
+body {
+    overflow-x: hidden;
+
+}
+
+/*webkit*/
+
+body::-webkit-scrollbar {
+    width: 2px;
+}
+
+body::-webkit-scrollbar-track {
+    background: black;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 60, 255);
+    border-radius: 20px;
+}
+
+body {
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ca0605b2-b53d-4c3e-bca9-b8b5c5db88a1/daqje6w-e16d041e-8992-47b8-afb3-e7524363346c.png/v1/fill/w_1024,h_577,q_80,strp/jojoveller_pattern_wallpaper_by_muffinofgood_daqje6w-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc3IiwicGF0aCI6IlwvZlwvY2EwNjA1YjItYjUzZC00YzNlLWJjYTktYjhiNWM1ZGI4OGExXC9kYXFqZTZ3LWUxNmQwNDFlLTg5OTItNDdiOC1hZmIzLWU3NTI0MzYzMzQ2Yy5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.qihmrW64DckZpLWDpTbbnIeLMH9U2HwdEympeu7Wh2c");
+    background-size: cover;
+}
+
+/*header*/
+
+header {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,35,83,1) 35%, rgb(7, 36, 255) 100%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+}
+
+.nav-right img {
+    width: 150px;
+    animation: img infinite 3s;
+}
+
+.nav-left ul {
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.nav-left ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.nav-left ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 20px;
+    transition: linear 0.4s;
+}
+
+.nav-left ul li a:hover {
+    background: rgb(5, 2, 29);
+}
+
+/*aside*/
+
+#flexbox {
+    display: flex;
+    position: relative;
+    top: 90px;
+}
+
+aside {
+    background: rgba(0, 0, 0, 0.734);
+    position: relative;
+    width: 300px;
+    height: 85vh;
+    border: 1px solid blue;
+    overflow-y: scroll;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+}
+
+aside::-webkit-scrollbar {
+    display: none;
+}
+
+.standlist h3 img {
+    width: 50px;
+}
+
+.standlist ul {
+    background-color: rgba(0, 6, 26, 0.708);
+    border: 1px solid black;
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+    border-radius: 20px;
+    list-style-type: ' ★';
+    padding: auto;
+}
+
+.standlist ul li {
+    margin-left: 20px;
+    transition: linear 0.4s;
+    color: rgb(0, 110, 255);
+    font-size: 16px;
+    text-shadow: 1px 0.5px rgba(0, 98, 255, 0.381);
+}
+
+.standlist ul li:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-shadow: 1px 1px 3px rgb(0, 255, 242);
+}
+
+/*section*/
+
+section {
+    width: 100%;
+    padding-bottom: 5px;
+    background-color: rgba(0, 60, 128, 0.287);
+     margin: auto;
+    margin-left: 15px;
+    border-radius: 20px;
+    background-size: 40%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.25s ease-in-out;
+}
+
+#standcard {
+    margin: auto;
+    margin-top: 5px;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    background: rgba(0, 39, 137, 0.616);
+    border-radius: 30px;
+    border: 1px solid black;
+    display: flex;
+    transition: 0.5s ease-in-out;
+   background-repeat: no-repeat;
+ 
+}
+#standcard.filter{
+    background-image: url("https://i.pinimg.com/originals/ff/06/11/ff06113f6035a3d897c89c59089d7d49.png");
+   
+    background-position: center;
+    filter:invert(100%);
+   width: 70%;
+    transform: rotate(360deg);
+}
+#standcard.filter div {
+    filter: opacity(0%);
+}
+
+.bloco {
+    margin: 5px;
+    /* background-color: red;*/
+    width: 50%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+#standimage {
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    background-color: black;
+    background-image: url("https://i.pinimg.com/736x/bd/11/63/bd11631dd1ee4548a61b10105b7eee9d.jpg");
+    border-radius: 30px;
+    text-align: center;
+     animation: anim-stars linear 60s infinite running;
+    background-position: 0%;
+}
+
+.second {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#standstats {
+    width: 320px;
+    height: 320px;
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 20px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    background-color: black;
+}
+
+#standstats img {
+    width: 100%;
+    height: 100%;
+    filter: invert(100%);
+}
+
+#standinfo {
+    border: 1px solid white;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    box-sizing: border-box;
+    background-color: black;
+    padding: 5px;
+    color: white;
+    
+    text-align: center;
+
+}
+
+#standinfo span  {
+    
+    font-size: auto;
+    margin: 0;
+    margin-top: 1px;
+}
+
+#standstats {
+    position: relative;
+}
+
+#standstats canvas {
+    filter: opacity(60%);
+    background-color: rgba(9, 0, 128, 0.357);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+#img {
+    transition: 0.25s ease-in-out;
+    width: 80%;
+}
+
+#search {
+    border: 1px solid pink;
+    transition: 0.25s ease-in-out;
+    background-color: rgb(255, 0, 255);
+    color: azure;
+    font-weight: bold;
+}
+
+#search:focus {
+    background-color: purple;
+}
+
+.pesqres {
+    background: rgb(225, 0, 255);
+    border-radius: 10px;
+
+}
+
+/*footer*/
+
+footer {
+    width: 100%;
+    position: relative;
+    top: 20vh;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,35,83,1) 35%, rgb(7, 36, 255) 100%);
+    color: white;
+}
+
+.conteiner-link {
+    display: inline-block;
+    margin: 3px;
+    border-style: none solid none none;
+    border-width: 1px;
+}
+
+.conteiner-link a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+#desc, #user, #stand {
+    font-size: 16px;
+    text-shadow: none;
+    font-weight: normal;
+}
+
+#iconload {
+   
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    
+}
+
+#iconload img {
+    width: 100px;
+    margin: auto;
+    animation: rotate 0.7s linear infinite;
+    border: 4px dashed rgb(0, 0, 0) ;
+    border-top-style:solid ;
+    border-top-color: yellow;
+    border-radius: 100%;
+
+}
+
+@media (max-width: 910px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+  header, section {
+        position: inherit;
+        width: 100vw;
+    }
+
+    aside {
+        width: 100%;
+        height:200px;
+
+     
+    }
+
+    #flexbox {
+        flex-direction: column-reverse;
+        margin: auto;
+        position: relative;
+        top: 0;
+        justify-items: center;
+    }
+
+    section {
+        margin: auto;
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-left ul li a {
+        padding: 5px;
+    }
+
+    .nav-left ul li {
+        display: block;
+    }
+
+    #standimage {
+      height: 200px;
+        width: 100%;
+        margin: auto;
+        margin: 0;
+        border: none;
+        box-shadow: 4px 4px 8px 4px black;
+
+    }
+
+    header {
+        display: none;
+    }
+
+    #standimage img {
+    width: 30%;
+    }
+
+    .bloco {
+        width: 100%;
+
+        height: 350px;
+        margin: 0;
+    }
+
+    #standstats {
+
+        width: 210px;
+        height: 210px;
+    }
+
+    #standcard {
+        flex-direction: column;
+
+        justify-content: center;
+
+    }
+
+    .second {
+        height: 300px;
+        display: inline-block;
+
+    }
+
+    #search {
+        width: 60%;
+    }
+
+    .standlist {
+       
+        font-size: 10px;
+    }
+
+    .standlist h3 {
+        font-size: 16px;
+    }
+
+    .standlist h3 img {
+        width: 10px;
+    }
+
+    #standinfo {
+        border: none;
+    }
+
+    #standinfo spam, #standinfo p {
+        font-size: 10px;
+    }
+
+    #todo {
+        margin-bottom: 0;
+    }
+}
+
+@keyframes img {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.7);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes anim-stars {
+    0% {
+        background-position-y: 0%;
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-y: -1000%;
+        background-position-x: -1000%;
+    }
+}
+@keyframes rotate {
+from{ transform: rotate(0deg);
+
+
+}
+to{ transform: rotate(359deg);
+   }    
+
+}
