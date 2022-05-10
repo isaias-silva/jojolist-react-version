@@ -256,18 +256,19 @@ section {
 #img {
     transition: 0.25s ease-in-out;
     width: 80%;
+    animation: stand 3s infinite;
 }
 
 #search {
     border: 1px solid pink;
     transition: 0.25s ease-in-out;
-    background-color: rgb(255, 0, 255);
+    background-color: rgb(23, 1, 187);
     color: azure;
     font-weight: bold;
 }
 
 #search:focus {
-    background-color: purple;
+    background-color: rgb(0, 75, 128);
 }
 
 .pesqres {
@@ -388,7 +389,8 @@ footer {
     }
 
     #standimage img {
-    width: 30%;
+    width: 60%;
+    
     }
 
     .bloco {
@@ -480,4 +482,18 @@ from{ transform: rotate(0deg);
 to{ transform: rotate(359deg);
    }    
 
+}
+@keyframes stand {
+    0% {
+        transform: scale(1);
+        
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }

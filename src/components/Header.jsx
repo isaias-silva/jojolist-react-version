@@ -8,11 +8,11 @@ export default function Header(){
         <div className='nav-left'>
             <ul>
                 <li>
-                    <a href="#github" target="_blank">github</a>
+                    <a href="https://github.com/isaias-silva/jojolist-react-version" rel="noreferrer" target="_blank">github</a>
                 </li>
 
                 <li>
-                    <a href="#jojoapi" target="_blank">jojoapi</a>
+                    <a href="https://jojo-api.herokuapp.com/" rel='noreferrer' target="_blank">jojoapi</a>
                 </li>
             </ul>
         </div>
