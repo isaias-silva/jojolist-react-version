@@ -1,32 +1,11 @@
 # jojolist
-
+<div>
+</div>
 <hr>
 <h2>⚠️application complete⚠️</h2>
-<p>frontend so so complete!</p>
+
 <hr>
 
-<table>
-  <tr>
-    <th>version</th>
-    <th>date</th>
-    <th>obs</th>
-  </tr>
-  <tr>
-    <td>1.0.0</td>
-    <td>29/08/2021</td>
-     <td>application in the beginning</td>
-  </tr>
-   <tr>
-    <td>1.0.1</td>
-    <td>14/09/2021</td>
-     <td>finished ready to connect API</td>
-  </tr>
-     <tr>
-    <td>1.0.2</td>
-    <td>13/01/2022</td>
-     <td>connect API and more ajusts</td>
-  </tr>
-</table>
 <h2>x & y in Canvas for atributes of stands </h2>
 <table>
   <tr>
