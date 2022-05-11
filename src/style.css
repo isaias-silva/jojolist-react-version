@@ -167,7 +167,7 @@ section {
     background-position: center;
     filter:invert(100%);
    width: 70%;
-    transform: rotate(360deg);
+   
 }
 #standcard.filter div {
     filter: opacity(0%);

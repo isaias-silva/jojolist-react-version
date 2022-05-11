@@ -1,9 +1,9 @@
 # jojolist
 <div>
-</div>
-<hr>
 <h2>⚠️application complete⚠️</h2>
 
+<hr>
+</div>
 <hr>
 
 <h2>x & y in Canvas for atributes of stands </h2>

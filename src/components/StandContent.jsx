@@ -38,10 +38,11 @@ class StandContent extends React.Component {
     const result = []
     for (let i in stands) {
       if (stands[i].name.includes(word.toLowerCase())) {
+        stands[i].maskindex=i
         result.push(stands[i])
       }
     }
-    const newlist = result.map((item, index) => <li onClick={() => this.setStand(index)}>{item.name[0].toUpperCase()+item.name.substring(1)}</li>)
+    const newlist = result.map((item, index) => <li onClick={() => this.setStand(item.maskindex)}>{item.name[0].toUpperCase()+item.name.substring(1)}</li>)
     return this.setState({ stdlist: newlist })
   }
   render() {
