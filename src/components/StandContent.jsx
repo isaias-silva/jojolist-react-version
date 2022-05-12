@@ -15,8 +15,8 @@ class StandContent extends React.Component {
     axios.get("https://jojo-api.herokuapp.com/jojostands").then((response) => {
 
       const persons = response.data
-      const list = persons.map((item, x) => <li onClick={() => this.setStand(x)}>{item.name[0].toUpperCase()+item.name.substring(1)}</li>)
-      let number=parseInt(Math.random()*persons.length)
+      const list = persons.map((item, x) => <li onClick={() => { ; return this.setStand(x) }}>{item.name[0].toUpperCase() + item.name.substring(1)}</li>)
+      let number = parseInt(Math.random() * persons.length)
       this.setState({ stand: persons[number], stdlist: list })
       this.setState({ persons });
 
@@ -24,6 +24,7 @@ class StandContent extends React.Component {
 
   }
   setStand(x) {
+   
     this.setState({ st: 'filter' })
     setTimeout(() => {
       this.setState({ st: '' })
@@ -38,11 +39,11 @@ class StandContent extends React.Component {
     const result = []
     for (let i in stands) {
       if (stands[i].name.includes(word.toLowerCase())) {
-        stands[i].maskindex=i
+        stands[i].maskindex = i
         result.push(stands[i])
       }
     }
-    const newlist = result.map((item, index) => <li onClick={() => this.setStand(item.maskindex)}>{item.name[0].toUpperCase()+item.name.substring(1)}</li>)
+    const newlist = result.map((item, index) => <li onClick={() => { return this.setStand(item.maskindex) }}>{item.name[0].toUpperCase() + item.name.substring(1)}</li>)
     return this.setState({ stdlist: newlist })
   }
   render() {
