@@ -12,7 +12,7 @@ class StandContent extends React.Component {
     this.setStand.bind(this)
   }
   componentDidMount() {
-    axios.get("https://jojoapi.herokuapp.com/jojostands").then((response) => {
+    axios.get("https://jojo-api.herokuapp.com/jojostands").then((response) => {
 
       const persons = response.data
       const list = persons.map((item, x) => <li onClick={() => { ; return this.setStand(x) }}>{item.name[0].toUpperCase() + item.name.substring(1)}</li>)
@@ -47,8 +47,8 @@ class StandContent extends React.Component {
     return this.setState({ stdlist: newlist })
   }
   render() {
-    const number=this.state.persons.length
-if(number<1){
+
+if(this.state.stand.name===undefined){
   return <div className="load">
 
   
