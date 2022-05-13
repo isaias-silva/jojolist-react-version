@@ -329,6 +329,25 @@ footer {
     border-radius: 100%;
 
 }
+.load{
+   
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+}
+
+img.load {
+    width: 100px;
+    height: 100px;
+    animation: rotate 1s infinite;
+    border: 6px solid white;
+border-radius: 100%;
+
+    border-color:rgba(142, 142, 142, 0.142) rgba(142, 142, 142, 0.142)  rgb(0, 255, 234);
+}
 
 @media (max-width: 910px) {
     * {

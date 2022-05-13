@@ -2,7 +2,7 @@ import React from "react";
 
 import axios from "axios";
 import Standcard from "./StandCard";
-
+import arrow from '../img/Loading.png'
 class StandContent extends React.Component {
   constructor(props) {
     super(props)
@@ -12,7 +12,7 @@ class StandContent extends React.Component {
     this.setStand.bind(this)
   }
   componentDidMount() {
-    axios.get("https://jojo-api.herokuapp.com/jojostands").then((response) => {
+    axios.get("https://jojoapi.herokuapp.com/jojostands").then((response) => {
 
       const persons = response.data
       const list = persons.map((item, x) => <li onClick={() => { ; return this.setStand(x) }}>{item.name[0].toUpperCase() + item.name.substring(1)}</li>)
@@ -47,8 +47,14 @@ class StandContent extends React.Component {
     return this.setState({ stdlist: newlist })
   }
   render() {
+    const number=this.state.persons.length
+if(number<1){
+  return <div className="load">
 
-
+  
+      <img class="load" src={arrow} alt="" />
+    </div>
+}
     return <div id="flexbox">
       <aside>
         <div className="standlist">
