@@ -1,6 +1,6 @@
 
 import React from 'react'
-import loading from '../img/Loading.png'
+
 import power from '../img/power.png'
 class Standcard extends React.Component {
     constructor(props) {
@@ -54,15 +54,13 @@ class Standcard extends React.Component {
         this.draw(canvas,ctx)
    }
     render() {
-        let imageurl
-        imageurl=this.props.stand.img
-        if(imageurl===undefined){
-            imageurl=loading
-        }
+        let image=new Image()
+        image.src=this.props.stand.img
+        
         return <div id="standcard" className={this.props.class} style={this.props.styled}>
             <div class="bloco">
                 <div id="standimage">
-                    <img src={imageurl} alt="imagestand" id="img" />
+                    <img src={image.src} alt="imagestand" id="img" />
                 </div>
             </div>
             <div class="bloco second">
