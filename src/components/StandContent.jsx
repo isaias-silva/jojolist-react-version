@@ -12,7 +12,7 @@ class StandContent extends React.Component {
     this.setStand.bind(this)
   }
   componentDidMount() {
-    axios.get("https://jojo-api.herokuapp.com/jojostands").then((response) => {
+    axios.get("https://jojoapi.up.railway.app/jojostands").then((response) => {
 
       const persons = response.data
       const list = persons.map((item, x) => <li onClick={() => { ; return this.setStand(x) }}>{item.name[0].toUpperCase() + item.name.substring(1)}</li>)
