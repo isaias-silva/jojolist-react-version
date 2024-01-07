@@ -43,7 +43,7 @@ body {
 /*header*/
 
 header {
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,35,83,1) 35%, rgb(7, 36, 255) 100%);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(35, 35, 83, 1) 35%, rgb(7, 36, 255) 100%);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -53,7 +53,7 @@ header {
 
 .nav-right img {
     width: 150px;
-  
+
 }
 
 .nav-left ul {
@@ -137,7 +137,7 @@ section {
     width: 100%;
     padding-bottom: 5px;
     background-color: rgba(0, 60, 128, 0.287);
-     margin: auto;
+    margin: auto;
     margin-left: 15px;
     border-radius: 20px;
     background-size: 40%;
@@ -158,17 +158,19 @@ section {
     border: 1px solid black;
     display: flex;
     transition: 0.5s ease-in-out;
-   background-repeat: no-repeat;
- 
+    background-repeat: no-repeat;
+
 }
-#standcard.filter{
+
+#standcard.filter {
     background-image: url("https://i.pinimg.com/originals/ff/06/11/ff06113f6035a3d897c89c59089d7d49.png");
-   
+
     background-position: center;
-    filter:invert(100%);
-   width: 70%;
-   
+    filter: invert(100%);
+    width: 70%;
+
 }
+
 #standcard.filter div {
     filter: opacity(0%);
 }
@@ -190,7 +192,7 @@ section {
     background-image: url("https://i.pinimg.com/736x/bd/11/63/bd11631dd1ee4548a61b10105b7eee9d.jpg");
     border-radius: 30px;
     text-align: center;
-     animation: anim-stars linear 60s infinite running;
+    animation: anim-stars linear 60s infinite running;
     background-position: 0%;
 }
 
@@ -226,13 +228,13 @@ section {
     background-color: black;
     padding: 5px;
     color: white;
-    
+
     text-align: center;
 
 }
 
-#standinfo span  {
-    
+#standinfo span {
+
     font-size: auto;
     margin: 0;
     margin-top: 1px;
@@ -283,7 +285,7 @@ footer {
     width: 100%;
     position: relative;
     top: 20vh;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,35,83,1) 35%, rgb(7, 36, 255) 100%);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(35, 35, 83, 1) 35%, rgb(7, 36, 255) 100%);
     color: white;
 }
 
@@ -307,7 +309,7 @@ footer {
 }
 
 #iconload {
-   
+
     width: 100%;
     height: 100vh;
     display: inline-block;
@@ -316,21 +318,22 @@ footer {
     left: 0;
     display: flex;
     align-items: center;
-    
+
 }
 
 #iconload img {
     width: 100px;
     margin: auto;
     animation: rotate 0.7s linear infinite;
-    border: 4px dashed rgb(0, 0, 0) ;
-    border-top-style:solid ;
+    border: 4px dashed rgb(0, 0, 0);
+    border-top-style: solid;
     border-top-color: yellow;
     border-radius: 100%;
 
 }
-.load{
-   
+
+.load {
+
     width: 100%;
     height: 100vh;
     align-items: center;
@@ -344,9 +347,9 @@ img.load {
     height: 100px;
     animation: rotate 1s infinite;
     border: 6px solid white;
-border-radius: 100%;
+    border-radius: 100%;
 
-    border-color:rgba(142, 142, 142, 0.142) rgba(142, 142, 142, 0.142)  rgb(0, 255, 234);
+    border-color: rgba(142, 142, 142, 0.142) rgba(142, 142, 142, 0.142) rgb(0, 255, 234);
 }
 
 @media (max-width: 910px) {
@@ -355,16 +358,16 @@ border-radius: 100%;
         margin: 0;
     }
 
-  header, section {
+    header, section {
         position: inherit;
         width: 100vw;
     }
 
     aside {
         width: 100%;
-        height:200px;
+        height: 200px;
 
-     
+
     }
 
     #flexbox {
@@ -394,7 +397,7 @@ border-radius: 100%;
     }
 
     #standimage {
-      height: 200px;
+        height: 200px;
         width: 100%;
         margin: auto;
         margin: 0;
@@ -408,8 +411,8 @@ border-radius: 100%;
     }
 
     #standimage img {
-    width: 60%;
-    
+        width: 60%;
+
     }
 
     .bloco {
@@ -443,7 +446,7 @@ border-radius: 100%;
     }
 
     .standlist {
-       
+
         font-size: 10px;
     }
 
@@ -493,19 +496,24 @@ border-radius: 100%;
         background-position-x: -1000%;
     }
 }
+
 @keyframes rotate {
-from{ transform: rotate(0deg);
+    from {
+        transform: rotate(0deg);
 
+
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
 
 }
-to{ transform: rotate(359deg);
-   }    
 
-}
 @keyframes stand {
     0% {
         transform: scale(1);
-        
+
     }
 
     50% {
@@ -515,4 +523,19 @@ to{ transform: rotate(359deg);
     100% {
         transform: scale(1);
     }
+}
+
+.warking {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin: auto;
+    margin-bottom: 100px;
+
+}
+.warking p{
+    font-size: 24px;
 }
